@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Trịnh Thị Hòa - Multimedia Designer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap');
+        
+        :root {
+            --primary: #0f172a; /* Slate 900 */
+            --accent: #2563eb;  /* Blue 600 */
+            --text-main: #334155; /* Slate 700 */
+            --text-muted: #64748b; /* Slate 500 */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9;
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            -webkit-print-color-adjust: exact;
+        }
+
+        .a4-container {
+            width: 210mm;
+            height: 297mm;
+            margin: 20px auto;
+            background: white;
+            display: grid;
+            grid-template-columns: 66mm 1fr;
+            box-sizing: border-box;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        @media print {
+            body { background: none; margin: 0; }
+            .a4-container { margin: 0; box-shadow: none; border: none; }
+            @page { margin: 0; size: A4; }
+        }
+
+        /* Sidebar Styling */
+        .sidebar { background-color: #f8fafc; padding: 25px 18px; border-right: 1px solid #e2e8f0; }
+        
+        .profile-img-container {
+            width: 100%;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        /* Tối ưu ảnh chân dung 3:4 */
+        .profile-img {
+            width: 100px;
+            height: 133px; 
+            border-radius: 12px;
+            object-fit: cover; /* Đảm bảo không bị méo ảnh */
+            border: 3px solid white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            background-color: #e2e8f0;
+        }
+
+        .sidebar-title { 
+            font-family: 'Montserrat', sans-serif; 
+            font-size: 9.5pt; 
+            font-weight: 700; 
+            color: var(--primary); 
+            text-transform: uppercase; 
+            border-bottom: 2px solid #e2e8f0; 
+            padding-bottom: 4px; 
+            margin-bottom: 10px; 
+            display: flex; 
+            align-items: center; 
+            gap: 6px; 
+        }
+        /* Skill Bars */
+        .skill-item { margin-bottom: 10px; }
+        .skill-info { display: flex; justify-content: space-between; font-size: 7.5pt; font-weight: 600; margin-bottom: 2px; }
+        .bar-bg { height: 4px; background: #e2e8f0; border-radius: 2px; }
+        .bar-fill { height: 100%; background: var(--accent); border-radius: 2px; }
+
+        /* Main Content Styling */
+        .main-content { padding: 30px 28px; }
+        .header { border-bottom: 1px solid #f1f5f9; padding-bottom: 12px; margin-bottom: 15px; }
+        .name-title { font-family: 'Montserrat', sans-serif; font-size: 21pt; color: var(--primary); line-height: 1; margin-bottom: 4px; letter-spacing: -0.02em; }
+        .job-title { font-size: 10pt; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 0.1em; }
+        
+        .main-section-title { 
+            font-family: 'Montserrat', sans-serif; 
+            font-size: 10.5pt; 
+            font-weight: 700; 
+            color: var(--primary); 
+            text-transform: uppercase; 
+            margin-bottom: 10px; 
+            margin-top: 20px;
+            display: flex; 
+            align-items: center; 
+            gap: 8px; 
+        }
+        .main-section-title::after { content: ""; flex: 1; height: 1px; background: #f1f5f9; }
+
+        .body-text { font-size: 9pt; color: var(--text-main); line-height: 1.45; }
+        .tag { background: #eff6ff; color: #1e40af; padding: 1px 6px; border-radius: 4px; font-size: 7.2pt; font-weight: 600; border: 1px solid #dbeafe; }
+        
+        .achievement-card { border-left: 3px solid var(--accent); padding-left: 12px; margin-bottom: 10px; }
+        .contact-info { font-size: 8pt; color: var(--text-muted); font-weight: 500; }
+        
+        ul { padding-left: 14px; margin-top: 4px; }
+        li { margin-bottom: 2px; }
+
+        .objective-item { margin-bottom: 8px; }
+        .objective-title { font-weight: 700; color: var(--primary); font-size: 8.5pt; display: block; margin-bottom: 2px; }
+    </style>
+</head>
+<body>
+
+    <div class="a4-container">
+        <!-- SIDEBAR -->
+        <aside class="sidebar space-y-6">
+            <!-- PROFILE IMAGE AREA -->
+            <div class="profile-img-container">
+                <!-- Thay link ảnh của bạn vào src dưới đây -->
+                <img src="img/cv.JPG" alt="Trịnh Thị Hòa" class="profile-img">
+            </div>
+
+            <section>
+                <div class="sidebar-title"><i class="fa-solid fa-video text-blue-500"></i> Video & Design</div>
+                <div class="space-y-3">
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Premiere Pro</span><span>80%</span></div>
+                        <div class="bar-bg"><div class="bar-fill" style="width: 80%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>CapCut Pro</span><span>85%</span></div>
+                        <div class="bar-bg"><div class="bar-fill" style="width: 85%; background: #f59e0b;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Photoshop</span><span>85%</span></div>
+                        <div class="bar-bg"><div class="bar-fill" style="width: 85%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Lightroom</span><span>90%</span></div>
+                        <div class="bar-bg"><div class="bar-fill" style="width: 90%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Ai / InDesign</span><span>75%</span></div>
+                        <div class="bar-bg"><div class="bar-fill" style="width: 75%"></div></div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="sidebar-title"><i class="fa-solid fa-star text-blue-500"></i> Năng lực bổ trợ</div>
+                <div class="flex flex-wrap gap-1.5">
+                    <span class="tag">Kỹ năng điều phối nhóm</span>
+                    <span class="tag">Tin học chuyên ngành</span>
+                    <span class="tag">Làm việc nhóm</span>
+                    <span class="tag">AI Prompting</span>
+                    <span class="tag">Generative AI</span>
+                </div>
+            </section>
+
+            <section>
+                <div class="sidebar-title"><i class="fa-solid fa-graduation-cap text-blue-500"></i> Học vấn</div>
+                <div class="space-y-1">
+                    <p class="font-bold text-slate-900 text-[9pt]">Đại học Kinh doanh và Công nghệ Hà Nội</p>
+                    <p class="text-[8pt] text-slate-500 italic">Kỹ nghệ phần mềm (2022 - 2026)</p>
+                    <p class="font-bold text-blue-600 text-[8.5pt] mt-1">GPA hiện tại: 3.79 / 4.0</p>
+                    <p class="text-[7.5pt] text-green-600 font-semibold italic">Đạt học bổng năm 2023</p>
+                </div>
+            </section>
+
+            <section>
+                <div class="sidebar-title"><i class="fa-solid fa-code text-blue-500"></i> Kỹ thuật IT</div>
+                <div class="flex flex-wrap gap-1">
+                    <span class="tag">HTML/CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">Firebase</span>
+                    <span class="tag">IoT (ESP32)</span>
+                </div>
+            </section>
+
+            <section>
+                <div class="sidebar-title"><i class="fa-solid fa-globe text-blue-500"></i> Ngôn ngữ</div>
+                <div class="body-text space-y-1 text-[8.5pt]">
+                    <p><b>Tiếng Việt:</b> Bản ngữ</p>
+                    <p><b>Tiếng Anh:</b> Đọc hiểu chuyên ngành</p>
+                </div>
+            </section>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+            <header class="header">
+                <h1 class="name-title">TRỊNH THỊ HÒA</h1>
+                <p class="job-title text-accent font-bold uppercase tracking-wider">Thực tập sinh Multimedia Designer | Video Editor</p>
+                <div class="contact-info flex flex-wrap gap-x-4 gap-y-1 mt-3">
+                    <span><i class="fa-solid fa-cake-candles text-blue-600 mr-1"></i>13/02/2004</span>
+                    <span><i class="fa-solid fa-phone text-blue-600 mr-1"></i>0364663178</span>
+                    <span><i class="fa-solid fa-envelope text-blue-600 mr-1"></i>hoatrinhthi2004@gmail.com</span>
+                    <span><i class="fa-solid fa-location-dot text-blue-600 mr-1"></i>Hà Nội</span>
+                    <span><i class="fa-brands fa-facebook text-blue-600 mr-1"></i>fb.com/hoaftt.04</span>
+                </div>
+            </header>
+
+            <section>
+                <div class="main-section-title">Mục tiêu nghề nghiệp</div>
+                <div class="space-y-3">
+                    <div class="objective-item">
+                        <span class="objective-title"><i class="fa-solid fa-bullseye text-blue-600 mr-1"></i> Mục tiêu ngắn hạn:</span>
+                        <p class="body-text text-justify">
+                            Mong muốn tìm kiếm môi trường thực tập chuyên nghiệp để học hỏi và rèn luyện các kiến thức đã tích lũy về Multimedia. Hy vọng được đóng góp một phần sức lực vào các dự án của Quý công ty, đồng thời nâng cao kỹ năng xử lý hậu kỳ và tư duy sáng tạo trong thực tế.
+                        </p>
+                    </div>
+                    <div class="objective-item">
+                        <span class="objective-title"><i class="fa-solid fa-rocket text-blue-600 mr-1"></i> Mục tiêu dài hạn:</span>
+                        <p class="body-text text-justify">
+                            Nỗ lực rèn luyện để trở thành nhân sự Multimedia vững tay nghề, có thể đảm nhiệm các dự án phức tạp đòi hỏi sự kết hợp giữa công nghệ và nghệ thuật. Phấn đấu trở thành nhân sự nòng cốt và có những đóng góp giá trị cho sự phát triển bền vững của doanh nghiệp.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="main-section-title">Thành tích tiêu biểu</div>
+                <div class="space-y-3">
+                    <div class="achievement-card">
+                        <p class="body-text font-bold text-slate-800 uppercase">Xây dựng kênh nội dung cá nhân đạt 3M+ views</p>
+                        <p class="body-text text-[8.5pt]">
+                            Bước đầu làm quen với quy trình lên ý tưởng và sản xuất nội dung trên TikTok, may mắn đạt mốc <b>3M+ views</b> tích lũy. 
+                            Có cơ hội hỗ trợ hậu kỳ cho một số nhà sáng tạo nội dung, làm quen với nhịp điệu và thị hiếu khán giả trên mạng xã hội.
+                        </p>
+                    </div>
+                    <div class="achievement-card">
+                        <p class="body-text font-bold text-slate-800 uppercase">Trưởng nhóm Dự án IoT (Học thuật - 2025)</p>
+                        <p class="body-text text-[8.5pt]">Được tin tưởng giao vai trò trưởng nhóm 5 thành viên để phát triển hệ thống ESP32-Firebase, thực hiện thiết kế giao diện UI cơ bản cho Dashboard Android.</p>
+                    </div>
+                    <div class="achievement-card">
+                        <p class="body-text font-bold text-slate-800 uppercase text-blue-600 italic">Học bổng năm 2023</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="main-section-title">Kinh nghiệm tích lũy</div>
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="font-bold text-slate-900 text-[10pt]">Freelance Video Editor & Photo Retoucher</h3>
+                            <span class="text-[8pt] font-bold text-slate-400 uppercase">2022 - NAY</span>
+                        </div>
+                        <ul class="body-text list-disc ml-4 mt-2 space-y-1.5 text-justify">
+                            <li><b>Hỗ trợ hậu kỳ Video:</b> Học hỏi và thực hiện các công việc chỉnh màu, xử lý âm thanh cơ bản bằng <b>Adobe Premiere Pro</b> & <b>CapCut</b>.</li>
+                            <li><b>Hỗ trợ chỉnh sửa ảnh:</b> Tham gia hỗ trợ retouch ảnh cưới, ảnh chân dung; học cách xử lý da và cân bằng ánh sáng cơ bản dưới sự hướng dẫn của khách hàng.</li>
+                            <li><b>Làm quen với AI:</b> Tập trung ứng dụng công nghệ AI (Photoshop AI, Lightroom) để tối ưu hóa thời gian xử lý ảnh và nâng cao chất lượng sản phẩm.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="font-bold text-slate-900 text-[10pt]">Phát triển nội dung (Công việc bán thời gian)</h3>
+                            <span class="text-[8pt] font-bold text-slate-400 uppercase">10/24 - 07/25</span>
+                        </div>
+                        <p class="body-text text-[8.5pt] text-blue-600 font-semibold italic">Beauty Pet Shop</p>
+                        <ul class="body-text list-disc ml-4 mt-1">
+                            <li><b>Hỗ trợ Fanpage:</b> Tham gia xây dựng nội dung, quản lý bài đăng và phản hồi khách hàng theo hướng dẫn.</li>
+                            <li><b>Biên tập Video quảng bá:</b> Thực hiện quay và dựng các clip ngắn giới thiệu dịch vụ tại cửa hàng, bước đầu giúp tăng mức độ nhận diện thương hiệu trên mạng xã hội.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
