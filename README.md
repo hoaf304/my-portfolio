@@ -1,15 +1,14 @@
-## Trịnh Thị Hòa  
-### Multimedia Designer & Video Editor Intern  
+# Multimedia Designer & Video Editor Intern  
 
 Chào mừng bạn đến với **Portfolio của tôi**!  
 Đây là nơi trưng bày các dự án **thiết kế đa phương tiện & dựng video**, kết hợp giữa **tư duy sáng tạo** và **nền tảng kỹ thuật IT**.
 
 
-## 🔗 Live Demo  
+# 🔗 Live Demo  
 👉 **Xem Portfolio tại đây:**  
 https://hoaf304.github.io/my-portfolio/
 
-## 🙋‍♂️ Giới thiệu bản thân  
+# 🙋‍♂️ Giới thiệu bản thân  
 
 - **Họ tên:** Trịnh Thị Hòa  
 - **Vị trí:** Thực tập sinh Multimedia Designer | Video Editor  
